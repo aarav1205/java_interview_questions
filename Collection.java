@@ -70,7 +70,9 @@ What is the difference between Array and ArrayList?
     And, ArrayList accepts duplicate objects unlike arrays..
     Array does not provide a lot of features like ArrayList, such as add(), addAll(), removeAll() etc..
 
-    So ArrayList is the obvious choice when we work on list.. But if the size of list is fixed and if we are using the list of primitives then we should use Arrays.. Although collection use auto boxing to reduce the coding effort but still it makes them slow.. so would use array with primitives.
+    So ArrayList is the obvious choice when we work on list.. But if the size of list is fixed and if we are using the list of
+	primitives then we should use Arrays.. Although collection use auto boxing to reduce the coding effort but still it 
+	makes them slow.. so would use array with primitives.
     And if are working on multidimensional situation, then also using array [][] is way more easy than List<List<>>..
 
 How LinkedList is different from ArrayList?
@@ -78,7 +80,9 @@ How LinkedList is different from ArrayList?
 
     ArrayList is an indexed based data structure.. The underlying data structure for ArrayList is a resizable or growable Array.
 
-    And LinkedList is a data structure which stores data and its address as list of nodes.. here, every node is linked to its previous and next node using pointers.. That is, the address part of the element points to the next element of the linked list.so see the address that the first node is having.. is actually the address of the next node.
+    And LinkedList is a data structure which stores data and its address as list of nodes.. here, every node is linked to its
+	previous and next node using pointers.. That is, the address part of the element points to the next element of the 
+	linked list.so see the address that the first node is having.. is actually the address of the next node.
 
     This is how we create ArrayList, and linkedLists
 
@@ -90,9 +94,13 @@ How LinkedList is different from ArrayList?
     LinkedList<String> lList = new LinkedList<String>();
     lList.add("");
 
-    Since ArrayList is index based data structure, it provides random access to its elements with the performance of O(1).. that is, we can access any element by the index.. Linked list also allows to get any element by index, but internally it traverse the list from start to read at the index node, then return the element. So the performance is O(n) which is slower than of arrayList. Therefore the ArrayList is recommended to use retrieving data..
+    Since ArrayList is index based data structure, it provides random access to its elements with the performance of O(1).. 
+	    that is, we can access any element by the index.. Linked list also allows to get any element by index, but internally
+	    it traverse the list from start to read at the index node, then return the element. So the performance is O(n) which is
+	    slower than of arrayList. Therefore the ArrayList is recommended to use retrieving data..
 
-    Next thing is, Insertion and removal of any element is faster in LinkedList compared to ArrayList. Because one insertion or deletion in middle requires n number of shifts.. So there is no concept of resizing array when element is added in middle..
+    Next thing is, Insertion and removal of any element is faster in LinkedList compared to ArrayList. Because one insertion or
+	    deletion in middle requires n number of shifts.. So there is no concept of resizing array when element is added in middle..
 
     and in linkedList it requires only one change in the address pointer of the particular node to add or remove any element.
 
@@ -162,7 +170,8 @@ What are Stack and Queue? How they are different?
 
     sysout(q);
 
-    So Queue allows retrieval of element in First In First Out order. and it is different from stack as Stack allows elements to be retrieved in Last In First out order.
+    So Queue allows retrieval of element in First In First Out order. and it is different from stack as Stack allows elements
+	    to be retrieved in Last In First out order.
 
     Stack<Integer> st = new Stack<>();
     st.push(10);
@@ -236,7 +245,8 @@ Whats difference between TreeSet and LinkedHashSet and HashSet?
 
     This will add both elements in ascending order by default.
 
-    And next is LinkedHashSet.. it was introduced in 1.4 version. It is the sub class of Hashset (no insertion order) where insertion order is preserved.
+    And next is LinkedHashSet.. it was introduced in 1.4 version. It is the sub class of Hashset (no insertion order) where 
+	    insertion order is preserved.
     And that's the main difference between HashSet and LinkedHashSet.
 
     We create linkedHashSet like,
