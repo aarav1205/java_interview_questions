@@ -7,6 +7,7 @@ What is Java Collection Framework?
     -> Reduced the development effort.
     -> Code quality is enhanced.
 
+	
 What are the basic interfaces of collection framework?
 
     1. Collection
